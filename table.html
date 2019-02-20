@@ -8,111 +8,154 @@
 		<h1>데이터 테이블 캡션</h1>
 		<table border="1">
 			<caption>2013년 사회인 야구팀 순위</caption>
-			<tr>
-				<th scope="col">순위</th>
-				<th scope="col">팀명</th>
-				<th scope="col">승</th>
-				<th scope="col">패</th>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>최강 홀릭</td>
-				<td>30</td>
-				<td>20</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>막강 투타</td>
-				<td>28</td>
-				<td>22</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>열정 그대</td>
-				<td>26</td>
-				<td>24</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>환희 그날</td>
-				<td>22</td>
-				<td>28</td>
-			</tr>
+			<thead>
+				<tr>
+					<th scope="col">순위</th>
+					<th scope="col">팀명</th>
+					<th scope="col">승</th>
+					<th scope="col">패</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>최강 홀릭</td>
+					<td>30</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>막강 투타</td>
+					<td>28</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>열정 그대</td>
+					<td>26</td>
+					<td>24</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>환희 그날</td>
+					<td>22</td>
+					<td>28</td>
+				</tr>
+			<tbody>
+		</table>
+		<h1>행 그룹 관련 요소</h1>
+		<table border="1">
+			<caption>전 세계 웹 브라우저 점유율</caption>
+			<thead>
+				<tr>
+					<th scope="col">웹브라우저</th>
+					<th scope="col">점유율</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>익스플로러</td>
+					<td>38.79%</td>
+				</tr>
+				<tr>
+					<td>파이어폭스</td>
+					<td>30.13%</td>
+				</tr>
+				<tr>
+					<td>크롬</td>
+					<td>21.45%</td>
+				</tr>
+				<tr>
+					<td>그외</td>
+					<td>9.63%</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th scope="row">합계</th>
+					<td>100%</td>
+			</tfoot>
 		</table>
 		<h1>셀 병합 관련 속성</h1>
 		<table border="1">
 			<caption>최강 음원 다운로드 (단위:백만)</caption>
-			<tr>
-				<th scope="col">곡명</th>
-				<th scope="col">가수</th>
-				<th scope="col">다운로드</th>
-			</tr>
-			<tr>
-				<td>나와 같다면</td>
-				<td>김연우</td>
-				<td>5,896</td>
-			</tr>
-			<tr>
-				<td>여러분</td>
-				<td>임재범</td>
-				<td>7,895</td>
-			</tr>
-			<tr>
-				<td>편지</td>
-				<td>BMK</td>
-				<td>6,032</td>
-			</tr>
-			<tr>
-				<td>늪</td>
-				<td>김범수</td>
-				<td>5,398</td>
-			</tr>
-			<tr>
-				<th scope="row" colspan="2">다운로드 합계</th>
-				<td>25,221</td>
-			</tr>
+			<thead>
+				<tr>
+					<th scope="col">곡명</th>
+					<th scope="col">가수</th>
+					<th scope="col">다운로드</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>나와 같다면</td>
+					<td>김연우</td>
+					<td>5,896</td>
+				</tr>
+				<tr>
+					<td>여러분</td>
+					<td>임재범</td>
+					<td>7,895</td>
+				</tr>
+				<tr>
+					<td>편지</td>
+					<td>BMK</td>
+					<td>6,032</td>
+				</tr>
+				<tr>
+					<td>늪</td>
+					<td>김범수</td>
+					<td>5,398</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th scope="row" colspan="2">다운로드 합계</th>
+					<td>25,221</td>
+				</tr>
+			</tfoot>
 		</table>
 		<h1>종합 활용</h1>
 		<table border="1">
 			<caption>공연요금</caption>
 			<thead>
 				<tr>
-					<th>좌석별 요금 합계</th>
-					<th></th>
-					<th></th>
-					<th></th>
+					<th colspan="4" scope="colgroup">좌석별 요금 합계</th>
 				</tr>
 				<tr>
-					<th>구분</th>
-					<th></th>
-					<th>S석</th>
-					<th>VIP석</th>
+					<th colspan="2" scope="colgroup">구분</th>
+					<th scope="col">S석</th>
+					<th scope="col">VIP석</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<th></th>
-					<th></th>
-					<td></td>
-					<td></td>
-				</tr>				<tr>
-					<th></th>
-					<th></th>
-					<td></td>
-					<td></td>
-				</tr>				<tr>
-					<th></th>
-					<th></th>
-					<td></td>
-					<td></td>
-				</tr>				<tr>
-					<th></th>
-					<th></th>
-					<td></td>
-					<td></td>
+					<th colspan="2" scope="row">성인</th>
+					<td>40,000원</td>
+					<td>60,000원</td>
+				</tr>				
+				<tr>
+					<th colspan="2" scope="row">청소년</th>
+					<td>30,000원</td>
+					<td>50,000원</td>
+				</tr>				
+				<tr>
+					<th rowspan="2" scope="rowgroup">소인</th>
+					<th scope="row">초등학생</th>
+					<td colspan="2">10,000원</td>
+				</tr>				
+				<tr>
+					<th scope="row">미취학아동</th>
+					<td colspan="2">5,000원</td>
 				</tr>
 			</tbody>
-			<tfoot></tfoot>
+			<tfoot>
+				<tr>
+					<th colspan="2" scope="row">총계</th>
+					<td>85,000원</td>
+					<td>125,000원</td>
+				</tr>
+			</tfoot>
 		</table>
 	</body>
 </html>
